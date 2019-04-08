@@ -34,6 +34,14 @@ class ChecklistsViewController: UITableViewController {
         items.append(item)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "addItem" {
+            let navigationController = segue.destination as! UINavigationController
+            let controller = navigationController.topViewController as! AddItemTableViewController
+            controller.delegate = self
+        }
+    }
+    
     func configureCheckmark(for cell: UITableViewCell, with item: ChecklistItem) {
         if item.checked {
             cell.accessoryType = .checkmark
@@ -80,5 +88,19 @@ class ChecklistsViewController: UITableViewController {
     }
     
    
+}
+
+extension ChecklistsViewController: AddItemTableViewControllerDelegate {
+    func addItemTableViewControllerDidCancel(_ controller: AddItemTableViewController) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func ddItemTableViewController(_ controller: AddItemTableViewController, didFinishAdding item: ChecklistItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    
+    
 }
 
