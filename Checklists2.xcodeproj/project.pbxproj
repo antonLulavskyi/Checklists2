@@ -13,7 +13,7 @@
 		520CA46122532B10004529CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520CA46022532B10004529CB /* Assets.xcassets */; };
 		520CA46422532B10004529CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 520CA46222532B10004529CB /* LaunchScreen.storyboard */; };
 		526FC348225487B5009E3481 /* ChecklistItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526FC347225487B5009E3481 /* ChecklistItem.swift */; };
-		526FC34D2254ACD6009E3481 /* AddItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526FC34C2254ACD6009E3481 /* AddItemTableViewController.swift */; };
+		526FC34D2254ACD6009E3481 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526FC34C2254ACD6009E3481 /* ItemDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		520CA46322532B10004529CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		520CA46522532B10004529CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526FC347225487B5009E3481 /* ChecklistItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChecklistItem.swift; sourceTree = "<group>"; };
-		526FC34C2254ACD6009E3481 /* AddItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemTableViewController.swift; sourceTree = "<group>"; };
+		526FC34C2254ACD6009E3481 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 		526FC34E2254ACE2009E3481 /* Add item screen */ = {
 			isa = PBXGroup;
 			children = (
-				526FC34C2254ACD6009E3481 /* AddItemTableViewController.swift */,
+				526FC34C2254ACD6009E3481 /* ItemDetailViewController.swift */,
 			);
 			path = "Add item screen";
 			sourceTree = "<group>";
@@ -173,7 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526FC34D2254ACD6009E3481 /* AddItemTableViewController.swift in Sources */,
+				526FC34D2254ACD6009E3481 /* ItemDetailViewController.swift in Sources */,
 				520CA45C22532B07004529CB /* ChecklistsViewController.swift in Sources */,
 				526FC348225487B5009E3481 /* ChecklistItem.swift in Sources */,
 				520CA45A22532B07004529CB /* AppDelegate.swift in Sources */,
