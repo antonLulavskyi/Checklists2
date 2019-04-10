@@ -11,20 +11,19 @@ import UIKit
 class ChecklistsViewController: UITableViewController {
 
     var items: [ChecklistItem]
+    var checklist: Checklist!
     
     required init?(coder aDecoder: NSCoder) {
         
         items = [ChecklistItem]()
         super.init(coder: aDecoder)
-//        createAnItem(name: "Walk the dog", checked: true)
-//        createAnItem(name: "Make a tea", checked: false)
-//        createAnItem(name: "Hang out with", checked: true)
         loadChecklistItems()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+       title = checklist.name
+        
     }
     
     
